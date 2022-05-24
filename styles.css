@@ -227,6 +227,48 @@ h1 span {
     transform: translate(35%,0);
 }
 
+.section3 {
+    background-color: var(--background_light_main);
+    padding: 72px 0;
+}
+
+.section3 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 p, .section3 span {
+    color: var(--text_light_secondary);
+}
+
+.section3 .container div span {
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid var(--text_light_secondary);
+    padding: 2px 12px;
+    
+}
+
+.section3 h2 {
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 12px 0;
+}
+
+.section3 a {
+    display: inline-block;
+    color: var(--icon_light_primary);
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.section3 img {
+    width: 50%;
+}
+
 @media only screen and (max-width : 1024px) {
     .nav-items, .github{
         display: none;
@@ -277,6 +319,12 @@ h1 span {
         width: 90%;
         
     }
+    .section3 .container {
+        flex-direction: column;
+    }
+    .section3 .container img {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 834px) {
@@ -284,14 +332,28 @@ h1 span {
     width: 255px;
     height: 255px;
     }
+    .section3 .container h2 {
+        font-size: 36px;
+    }
+    .section3 .container p {
+    font-size: 16px;
+    }
 }
 
 @media only screen and (max-width:1024px) {
+    nav {
+        padding: 20px 0;
+    }
     .section2-second-child span {
         font-size: 24px;
         font-weight: 800;
     }
-    
+    .container {
+        margin: 0 20px;
+    }
+    .section2-first-child h2, .section3 h2 {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
