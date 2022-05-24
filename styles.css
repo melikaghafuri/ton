@@ -119,7 +119,7 @@ nav a img {
 }
 
 
-section.container-fluid {
+.section1.container-fluid {
     background-color: #232328;
 }
 
@@ -179,6 +179,51 @@ h1 span {
 .diamond {
     width: 230px;
     height: 230px;
+}
+
+.section2 {
+}
+
+.section2 h2{
+    font-size: 54px;
+    font-weight: 800;
+}
+
+.section2 .section2-p {
+    color: var(--text_light_secondary);
+}
+
+.section2-first-child {
+    text-align: center;
+}
+
+.section2-second-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2-second-child div {
+    width: 30%;
+    height: 125px;
+    background-color: var(--background_light_main);
+    border-radius: 20px;
+    padding:18px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2-second-child span {
+    font-size: 40px ;
+    font-weight: 700;
+}
+
+.section2-second-child img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(35%,0);
 }
 
 @media only screen and (max-width : 1024px) {
