@@ -143,6 +143,7 @@ h1 {
     line-height: 1;
 
 } 
+
 h1 span {
     background: -webkit-linear-gradient(89.92deg,#06a1ef 28.51%,#69cdff 85.79%);
     -webkit-background-clip: text;
@@ -179,9 +180,6 @@ h1 span {
 .diamond {
     width: 230px;
     height: 230px;
-}
-
-.section2 {
 }
 
 .section2 h2{
@@ -240,7 +238,7 @@ h1 span {
     align-items: center;
 }
 
-.section3 p, .section3 span {
+.section3 p, .section3 span , .section4 p {
     color: var(--text_light_secondary);
 }
 
@@ -259,7 +257,7 @@ h1 span {
     margin: 12px 0;
 }
 
-.section3 a {
+.section3 a , .section4 a {
     display: inline-block;
     color: var(--icon_light_primary);
     font-weight: 800;
@@ -271,15 +269,64 @@ h1 span {
     width: 50%;
 }
 
+.section4 {
+    margin: 48px 0 ;
+}
+
+.section4 h2 {
+    margin: 48px 0;
+}
+
+.section4 h4 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.section4 .timeline div {
+    position: relative;
+    width: 33.33333%;
+    border-top: 2px solid var(--icon_light_secondary);
+}
+
+.section4 .timeline div:nth-child(3) {
+    border-top: 2px dashed var(--icon_light_secondary);
+}
+
+.section4 .timeline div::before {
+    content: "";
+    width: 8px;
+    height:8px;
+    background-color: var(--button_light_primary);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(0,-60%);
+}
+
+.section4 .timeline div:nth-child(3)::before {
+    content: "";
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    border: 10px solid var(--button_light_primary);
+}
+
+.section4 div p {
+    padding-right: 48px;
+}
+
 .section4 .timeline {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.section4 .timeline div {
-    width: 33.33333%;
-    border-top: 2px solid var(--covers_light_green);
+
+.section3 a:hover , .section4 a:hover {
+    color: var(--button_light_primary_hover);
+}
+
+.section3 a:active , .section4 a:active {
+    color: var(--button_light_primary_pressed);
 }
 
 @media only screen and (max-width : 1024px) {
@@ -338,6 +385,34 @@ h1 span {
     .section3 .container img {
         width: 100%;
     }
+
+    .section4 {
+        width: 100%;
+    }
+
+    .section4 .timeline {
+        flex-direction: column;
+        width: 100%;
+        padding: 12px;
+    }
+    .section4 .timeline div {
+        width: 100%;
+        border-top: none;
+        border-left: 2px solid var(--icon_light_secondary);
+        padding: 12px;
+    }
+    
+    .section4 .timeline div:nth-child(3) {
+        border-top: none;
+        border-left: 2px dashed var(--icon_light_secondary);
+    }
+
+    .section4 .timeline div::before {
+        transform: translate(-200%,-24px);
+    }
+    .section4 .timeline div:nth-child(3):before {
+        transform: translate(-100%,-24px);
+    }
 }
 
 @media only screen and (max-width: 834px) {
@@ -345,14 +420,14 @@ h1 span {
     width: 255px;
     height: 255px;
     }
-    .section3 .container h2 {
-        font-size: 36px;
+    .section1 h1, .section2 .container .section2-first-child h2, .section3 .container h2 {
+        font-size: 24px;
     }
-    .section3 .container p {
-    font-size: 16px;
+    .section1 p, .section2 .container .section2-first-child p, .section3 .container p, .section3 .container a {
+        font-size: 12px;
     }
-}
 
+}
 @media only screen and (max-width:1024px) {
     nav {
         padding: 20px 0;

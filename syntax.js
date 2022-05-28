@@ -6,3 +6,4 @@ function transactionsFuncion() {
 }
 
 setInterval(transactionsFuncion, 500);
+
