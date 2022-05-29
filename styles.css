@@ -163,26 +163,25 @@ h1 span {
   font-size: 20px;
 }
 
-.button-join,
-.section5 div a {
+.button-primary {
   display: inline-block;
   background-color: var(--button_dark_primary);
-  color: transparent;
   border-radius: 50px;
   padding: 20px;
   font-weight: 800;
-  position: relative;
   color: var(--text_dark_primary);
 }
 
-.button-join:hover,
-.section5 div a:hover {
+.button-primary:hover {
   background-color: var(--button_light_primary_hover);
 }
 
-.button-join:active,
-.section5 div a:active {
+.button-primary:active {
   background-color: var(--button_dark_primary_pressed);
+}
+
+.button-join {
+  position: relative;
 }
 
 .diamond {
@@ -248,8 +247,7 @@ h1 span {
 
 .section3 p,
 .section3 span,
-.section4 p,
-.section5 p {
+.section4 p {
   color: var(--text_light_secondary);
 }
 
@@ -261,8 +259,7 @@ h1 span {
 }
 
 .section3 h2,
-.section4 h2,
-.section5 h2 {
+.section4 h2 {
   font-size: 54px;
   font-weight: 800;
   line-height: 1;
@@ -342,56 +339,6 @@ h1 span {
 .section4 a:active {
   color: var(--button_light_primary_pressed);
 }
-
-.section5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.section5 div:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.section5 div p {
-  margin-left: 48px;
-}
-
-.section5 a img {
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-.section5 .table {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.section5 .table div:first-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.section5 .table div:first-child span {
-  display: inline-block;
-  width: 25%;
-}
-
-/* .section5 .table {
-  display: flex;
-} */
-
-/* .section5 .table:last-child {
-  overflow: scroll;
-} */
-
 
 
 @media only screen and (max-width: 1024px) {
